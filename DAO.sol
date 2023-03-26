@@ -51,7 +51,7 @@ contract CommunityDAO {
 
         emit VolunteerAssigned(_projectId, _volunteer);
     }
-}
+
 
     //allows users to retrieve all of the details for a specific project by passing in the project ID
     function getProject(uint256 _projectId) public view returns (string memory, string memory, address, bool, bool, address[] memory, uint256, uint256) {
@@ -101,3 +101,4 @@ contract CommunityDAO {
         }
         return result;
     }
+}
